@@ -41,13 +41,9 @@ a:hover {
 }
 
 #nav {
-    background-color: #330066;
-    border-radius: 20px 0px 0px 20px;
     margin-top: 2%;
     float:right;
     width: 50%;
-    border: #FFCC33 solid;
-    border-width: 3px 0px 10px 12px;
 }
 
 #nav li {
@@ -57,27 +53,22 @@ a:hover {
     font-weight: bold;
     margin-right: 5%;
     font-size: 1.5em;
-
 }
 
 /* FOOTER */
 
-footer {     
-    background-color:#330066;
-    float:left;
-    border-radius:30px 30px 0px 0px;
-    border: #FFCC33 solid;
-    border-width: 10px 12px 0px 3px;
-    margin-left: 2%;
-    padding: 1% 2% 0% 2%;
+#icons {     
+  padding-bottom:0;
+    margin-bottom:0;
 }
 
-footer p {
-    color:#FFCC33;
-    font-size: .7em;
-    text-align:right;
-    display:inline;
- 
+#credits {
+    color:#330066;
+    font-size: 1em;
+    font-style: italic;
+    margin-right:10px;
+    padding-top:0%;
+    margin-top:0%;
 }
 
 /* DIVS */
