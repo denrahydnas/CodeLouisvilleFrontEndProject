@@ -27,10 +27,18 @@ a:hover {
     color: #666699;
 }
 
+/* HEADER PHOTOS */
+
+#skyline1 {
+    background-image:url(backgroundimages/skyline1.JPG);
+   /* background-repeat: no-repeat;*/
+    width: 100%;
+}
+
 /* HEADER */
 
 #masthead {
-    background-image:linear-gradient(ghostwhite, #666699);
+    background:linear-gradient(to bottom, rgba(102,102,153,0), rgba(102,102,153,1));
     display:block; 
     margin: 0;
 }
@@ -95,7 +103,41 @@ a:hover {
 #joinlink {
     background-color:#330066;
     font-family:Arial, sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     display:block;
+    padding: 3% 0 3% 0;
 }
+
+/* PHOTOS */
+
+#photo1 {
+    width: 45%;
+    border-radius:25px;
+    border: 4px solid #FFCC33;
+    float:right;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
