@@ -10,13 +10,12 @@
     background-image:url(backgroundimages/reservoir2.jpg);
 }
 .activities {
-    background-image:url(backgroundimages/courthouse.jpg);
+    background-image:url(backgroundimages/humana.jpg);
 }
 .projects {
     background-image:url(backgroundimages/watertower.jpg);
 }
 body {
-    /*background-attachment:fixed;*/
     background-repeat: no-repeat;
     background-size:cover;
     margin:0;
@@ -25,7 +24,7 @@ body {
 
 /* TEXT RULES */
 
-header h1 {
+h1 {
     font-family:'Amaranth', sans-serif;
     font-size:9em;
     color: #006;
@@ -33,7 +32,7 @@ header h1 {
     margin: 1% 0 1% 200px;
 }
 
-header h2 {
+h2 {
     font-family:'Amaranth', sans-serif;
     font-size:8em;
     font-style:italic;
@@ -42,17 +41,25 @@ header h2 {
     margin: 2% 0 1% 50px;
 }
 
-h1 {
+h3 {
     color:#006;
     font-family:'Catamaran', sans-serif;
-    font-size: 7rem;
+    font-size: 6em;
+    font-weight:bold;
+    text-shadow: 2px 2px 5px #FC3;
+}
+
+h4 {
+    color:#006;
+    font-family:'Catamaran', sans-serif;
+    font-size: 4em;
     font-weight:bold;
 }
 
-h2 {
+h5 {
     color:#006;
     font-family:'Catamaran', sans-serif;
-    font-size: 5em;
+    font-size: 3em;
     font-weight:bold;
 }
 
@@ -62,15 +69,13 @@ p {
     font-size: 1.2em;
 }
 
-/* LINKS */
-
 a {
     text-decoration: none;
-    color: #FC3;
+    color: #006;
 }
 
 a:hover {
-    color: #669;
+    color: #FC3;
 }
 
 /* HEADER */
@@ -92,20 +97,20 @@ a:hover {
     left:82%;
 }
 
-.nav a {
-    color:#006;
+.projects .headline {
+    margin-left: 20%;
 }
-.nav a:hover {
-    color: #FC3;
+.about .headline {
+    margin-left: 5%;
+}
+.activities .headline {
+    margin-left: 20%;
+}
+.contact .headline {
+    margin-left: 20%;
 }
 
 /* FOOTER */
-
-.icon {     
-    padding-bottom:0;
-    margin-bottom:0;
-    max-width:50%;
-}
 
 .credits {
     color:#006;
@@ -115,7 +120,7 @@ a:hover {
     text-align:center;
 }
 
-/* DIVS */
+/* CONTENT */
 
 .divLeft {
     background-color:rgba(255,255,255,0.7);
@@ -142,6 +147,30 @@ a:hover {
     text-align: center;
     display:block;
     padding: 3% 0 3% 0;
+}
+.joinlink a {
+    color:#FC3;
+}
+.joinlink a:hover {
+    color:#669;
+}
+
+
+/*CONTACTS PAGE*/
+
+#links {
+    text-align:center;
+}
+
+.icons td {
+    padding: 10px;
+    height: 50px;
+    width: 300px;
+    vertical-align: middle;
+    text-align:center;    
+}
+.icons a {
+    font-size: 2em;
 }
 
 
