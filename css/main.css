@@ -1,16 +1,16 @@
 /* BACKGROUND PHOTOS */
 
 .home {
-    background-image:url(backgroundimages/bridges2.jpg);
+    background-image:url(backgroundimages/bridges3.jpg);
 }
 .about {
-    background-image:url(backgroundimages/frankfort.jpg);
+    background-image:url(backgroundimages/bridges3.jpg);
 }
 .contact {
-    background-image:url(backgroundimages/reservoir2.jpg);
+    background-image:url(backgroundimages/reservoir.jpg);
 }
 .activities {
-    background-image:url(backgroundimages/humana.jpg);
+    background-image:url(backgroundimages/watertower.jpg);
 }
 .projects {
     background-image:url(backgroundimages/watertower.jpg);
@@ -28,7 +28,7 @@ h1 {
     font-family:'Amaranth', sans-serif;
     font-size:9em;
     color: #006;
-    text-shadow: 2px 2px 5px #FC3;
+    text-shadow: 2px 2px 5px #FFF;
     margin: 1% 0 1% 200px;
 }
 
@@ -37,7 +37,7 @@ h2 {
     font-size:8em;
     font-style:italic;
     color: #006;
-    text-shadow: 2px 2px 5px #FC3;
+    text-shadow: 2px 2px 5px #FFF;
     margin: 2% 0 1% 50px;
 }
 
@@ -46,7 +46,7 @@ h3 {
     font-family:'Catamaran', sans-serif;
     font-size: 6em;
     font-weight:bold;
-    text-shadow: 2px 2px 5px #FC3;
+    text-shadow: 2px 2px 5px #FFF;
 }
 
 h4 {
@@ -94,20 +94,20 @@ a:hover {
     padding-bottom:10px;
     position:fixed;
     top:0;
-    left:82%;
+    right:3%;
 }
 
 .projects .headline {
-    margin-left: 20%;
+    margin-left: 25%;
 }
 .about .headline {
     margin-left: 5%;
 }
 .activities .headline {
-    margin-left: 20%;
+    margin-left: 25%;
 }
 .contact .headline {
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 /* FOOTER */
