@@ -26,7 +26,7 @@ body {
 
 h1 {
     font-family:'Amaranth', sans-serif;
-    font-size:9em;
+    font-size:10vw;
     color: #006;
     text-shadow: 2px 2px 5px #FFF;
     margin: 1% 0 1% 20%;
@@ -34,7 +34,7 @@ h1 {
 
 h2 {
     font-family:'Amaranth', sans-serif;
-    font-size:8em;
+    font-size:9vw;
     font-style:italic;
     color: #006;
     text-shadow: 2px 2px 5px #FFF;
@@ -44,16 +44,17 @@ h2 {
 h3 {
     color:#006;
     font-family:'Catamaran', sans-serif;
-    font-size: 6em;
+    font-size: 7vw;
     font-weight:bold;
     text-shadow: 2px 2px 5px #FFF;
+    margin:0;
     
 }
 
 h4 {
     color:#006;
     font-family:'Catamaran', sans-serif;
-    font-size: 4em;
+    font-size: 6vw;
     font-weight:bold;
     margin:0;
 }
@@ -89,7 +90,7 @@ a:hover {
     font-family: 'Catamaran', Arial, sans-serif;
     font-weight: bold;
     font-size: 1.2em;
-    background-color:#FFF;
+    background-color:rgba(255,255,255,0.9);
     box-shadow: -5px 5px 30px #006;
     border-radius: 0px 0px 30px 30px;
     border-width: 0px 8px 5px 4px;
@@ -101,16 +102,21 @@ a:hover {
 }
 
 .projects .headline {
-    margin-left: 25%;
+    margin: 8% 25% 8% 25%;
+    padding:0;
+    
 }
 .about .headline {
-    margin-left: 5%;
+    margin:3% 10% 5% 8%;
+    padding:0;
 }
 .activities .headline {
-    margin-left: 25%;
+    margin:8% 25% 8% 25%;
+    padding:0;
 }
 .contact .headline {
-    margin-left: 25%;
+    margin:8% 25% 8% 25%;
+    padding:0;
 }
 
 /* FOOTER */
