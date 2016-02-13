@@ -45,8 +45,55 @@
             <div class="joinlink">
                 <a>Join Louisville Rotaract</a>
             </div>
+            <div class="joinform">
+                    <h5>Thank you for your interest in joining Rotaract!</h5>
+                        <p> Please fill out the form below. We will contact you soon with more information about joining our club.</p>
+                    <form action="#" method="post">
+		              <p>
+			             <label for="firstname">First Name (required):</label>
+			             <input id="firstname" name="firstname" type="text">
+		              </p>
+                      <p>
+			             <label for="lastname">Last Name:</label>
+			             <input id="lastname" name="lastname" type="text">
+		              </p>
+		              <p>
+			             <label for="email">Please enter your email (required):</label>
+			             <input id="email" name="email" type="text">
+		              </p>
+		              <p>
+			             <label for="phone">Please enter your phone number:</label>
+			             <input id="phone" name="phone" type="text">
+		              </p>
+		              <p>
+			             <input id="submit" type="submit" value="Submit" disabled>
+		              </p>
+	               </form>
+                </div>
             <div class="divLeft">
-                <h5>Send us project ideas! +form</h5>
+                <h5>Have an idea for a Rotaract service project?</h5>
+                    <form action="#" method="post">
+		              <p>
+			             <label for="comment">Please tell us about it:</label>
+			             <input id="projectidea" name="projectidea" type="text">
+		              </p>
+		              <p>
+			             <label for="email">Can we contact you for more information?</label>
+			             <checkbox>Y</checkbox> <checkbox>N</checkbox>
+		              </p>
+                        <!-- reveal if Y is checked -->
+                    <p>
+			             <label for="email">Name:</label>
+			             <input id="name" name="name" type="text">
+		              </p>
+		              <p>
+			             <label for="email">Please enter your email:</label>
+			             <input id="email" name="email" type="email">
+		              </p>
+		              <p>
+			             <input id="submit" type="submit" value="SUBMIT">
+		              </p>
+	               </form>
             </div>
     </body>
        <footer>
@@ -54,4 +101,6 @@
                 <p> &copy;   2016 SL9Design    ~    a CODELouisville Project</p>
             </div>
         </footer>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/joinlink.js" type="text/javascript" charset="utf-8"></script>
 </html>
