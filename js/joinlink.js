@@ -1,23 +1,35 @@
 $(document).ready(function(){
-    $('.joinlink').click(function(){
-        $('.joinform').toggle(); 
-        });
     
-//create overlay
-var $overlay = $('<div id="overlay"></div>');
-//Add form to overlay
-var $formOverlay = $overlay.append($(".joinform"))
+//variables
+var $formOverlay = $('<div id="overlay"></div>').append($(".joinform"));
+var firstname = $("#firstname").val();
+var lastname = $("#lastname").val();
+var email = $("#email").val();
     
 //Add overlay to body
     $("body").append($formOverlay);
- 
-$('.joinlink').click(function(event){
-    event.preventDefault();
-    $formOverlay.show();
-    });
 
+// show join form
+   $('.joinlink').click(function(){
+        $('.joinform').toggle(); 
+    });
+    
+$('.joinlink').click(function(event){
+        event.preventDefault();
+            $formOverlay.show();
+  });
+    
 //When overlay is clicked, hide overlay
-$overlay.click(function(){
+$formOverlay.dblclick(function(){
     $formOverlay.hide();
     });
+    
+//disable submit until required inputs are filled    
+    
+   if (!(firstname == "" && lastname == "" && email == "")) {
+        $('#submit').prop('disabled',false)
+    } else {
+       $('#submit').prop('disabled',true)
+   };
+    
 });

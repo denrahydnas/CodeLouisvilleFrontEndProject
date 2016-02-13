@@ -225,9 +225,16 @@ a:hover {
 
 
 
+/* IDEAS FORM */
 
-
-
+.ideas #submit {
+    background-color:#006;
+    padding:1%;
+    border-radius:50%;
+    border-color:#006;
+    color:#FC3;
+    box-shadow: 2px 2px 10px #000;
+}
 
 
 
