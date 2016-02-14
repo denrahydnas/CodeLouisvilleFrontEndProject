@@ -25,7 +25,7 @@ body {
 /* TEXT RULES */
 
 h1 {
-    font-family:'Amaranth', sans-serif;
+    font-family:'Monserrat', sans-serif;
     font-size:9em;
     color: #006;
     text-shadow: 2px 2px 5px #FFF;
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-    font-family:'Amaranth', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-size:8em;
     font-style:italic;
     color: #006;
@@ -92,14 +92,19 @@ a:hover {
     font-weight: bold;
     font-size: 1.2em;
     background-color:rgba(255,255,255,0.9);
-    box-shadow: -5px 5px 30px #006;
+    box-shadow: -5px 5px 10px #006;
     border-radius: 0px 0px 30px 30px;
     border-width: 0px 8px 5px 4px;
-    padding: 5px 10px 12px 10px;
+    padding: 5px 10px 15px 10px;
     display:inline-block;
     position:fixed;
     top:0;
     right:3%;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .projects .headline {
@@ -222,7 +227,6 @@ a:hover {
     display:none;
     padding-top: 8%;
 }
-
 
 /* IDEAS FORM */
 
