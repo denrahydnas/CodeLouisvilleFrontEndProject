@@ -2,9 +2,6 @@ $(document).ready(function(){
     
 //variables
 var $formOverlay = $('<div id="overlay"></div>').append($(".joinform"));
-var firstname = $("#firstname").val();
-var lastname = $("#lastname").val();
-var email = $("#email").val();
     
 //Add overlay to body
     $("body").append($formOverlay);
@@ -19,17 +16,21 @@ $('.joinlink').click(function(event){
             $formOverlay.show();
   });
     
-//When overlay is clicked, hide overlay
+//When overlay is double clicked, hide overlay
 $formOverlay.dblclick(function(){
     $formOverlay.hide();
-    });
-    
-//disable submit until required inputs are filled    
-    
-   if (!(firstname == "" && lastname == "" && email == "")) {
-        $('#submit').prop('disabled',false)
-    } else {
-       $('#submit').prop('disabled',true)
-   };
-    
+    });  
 });
+
+
+$("#join").submit(function(event) {
+  if ($("#firstname").val().length > 0 && $("#lastname").val().length > 0 && $("#email").val().length > 0) {
+    return;
+  }else{
+  $("span").text("please complete required fields").show().fadeOut(3000);
+  event.preventDefault();
+    }
+});
+
+
+

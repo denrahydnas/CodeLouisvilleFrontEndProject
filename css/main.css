@@ -224,22 +224,33 @@ a:hover {
 }
 
 
-
 /* IDEAS FORM */
 
-.ideas #submit {
+#ideasubmit {
     background-color:#006;
     padding:1%;
     border-radius:50%;
     border-color:#006;
     color:#FC3;
     box-shadow: 2px 2px 10px #000;
+    margin:5% 45% 0 45%;
 }
 
+.ideas #projectidea {
+    width: 91%; 
+    height:150px;
+    padding: 2px;
+}
 
+.ideas #contactname {
+    width: 75%; 
+    padding: 1px;
+}
 
-
-
+.ideas #contactemail {
+    width: 71.5%; 
+    padding: 1px;
+}
 
 
 

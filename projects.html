@@ -48,7 +48,7 @@
             <div class="joinform">
                     <h5>Thank you for your interest in joining Rotaract!</h5>
                         <p> Please fill out the form below. We will contact you soon with more information about joining our club.<br> (starred items are required)</p>
-                    <form action="#" method="post">
+                    <form id="join" action="#" method="post">
 		              <p>
 			             <label for="firstname">First Name:*</label>
 			             <input id="firstname" name="firstname" type="text">
@@ -65,6 +65,7 @@
 			             <label for="phone">Please enter your phone number:</label>
 			             <input id="phone" name="phone" type="text">
 		              </p>
+                        <span class="reminder"></span>
 		              <p>
 			             <input id="submit" type="submit" value="Submit">
 		              </p>
@@ -74,24 +75,25 @@
                 <h5>Have an idea for a Rotaract service project?</h5>
                     <form class="ideas" action="#" method="post">
 		              <p>
-			             <label for="comment">Please tell us about it:</label>
-			             <input id="projectidea" name="projectidea" type="textarea">
+			             <label for="comment">Please tell us about it:</label><br>
+                          <textarea id="projectidea" name="projectidea" type="textbox"></textarea>
 		              </p>
 		              <p>
-			             <label for="email">Can we contact you for more information?</label>
-			             <checkbox>Y</checkbox> <checkbox>N</checkbox>
+			             <label for="request">Can we contact you for more information?</label>
+			            Y<input id="Y" type="radio" name="contactok" value="Y"> 
+                        N<input id="N" type="radio" name="contactok" value="N"> 
 		              </p>
                         <!-- reveal if Y is checked -->
-                        <p>
-			             <label for="email">Name:</label>
-			             <input id="name" name="name" type="text">
-		              </p>
+                        <p class="reveal">
+			             <label for="contactname">What is your name?</label>
+			             <input id="contactname" name="name" type="text">
+		                  </p>
+		                  <p class="reveal">
+			             <label for="contactemail">Please enter your email:</label>
+			             <input id="contactemail" name="email" type="email">
+		                  </p>
 		              <p>
-			             <label for="email">Please enter your email:</label>
-			             <input id="email" name="email" type="email">
-		              </p>
-		              <p>
-			             <input id="submit" type="submit" value="SUBMIT">
+			             <input id="ideasubmit" type="submit" value="SUBMIT">
 		              </p>
 	               </form>
             </div>
@@ -103,4 +105,5 @@
         </footer>
     <script src="//code.jquery.com/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/joinlink.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/ideasform.js" type="text/javascript" charset="utf-8"></script>
 </html>
