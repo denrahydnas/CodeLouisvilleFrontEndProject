@@ -26,24 +26,37 @@ body {
 
 h1 {
     font-family:'Monserrat', sans-serif;
-    font-size:9em;
-    color: #006;
-    text-shadow: 2px 2px 5px #FFF;
-    margin: 1% 0 1% 20%;
+    font-size:7.5em;
+    font-style:italic;
+    margin: 1% 0 1% 15%;
+    background-color: #006;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.7);
+    -webkit-background-clip: text;
+        -moz-background-clip: text;
+            background-clip: text;
 }
 
 h2 {
     font-family:'Montserrat', sans-serif;
-    font-size:8em;
+    font-size:7em;
     font-style:italic;
-    color: #006;
-    text-shadow: 2px 2px 5px #FFF;
-    margin: 2% 0 1% 5%;
+    background-color: #006;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.85);
+    -webkit-background-clip: text;
+        -moz-background-clip: text;
+            background-clip: text;
+    margin: 5% 0 1% 2%;
+    width: 75%;
+    position:absolute;
+    top: 0;
+    left: 0;
 }
 
 h3 {
     color:#006;
-    font-family:'Catamaran', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-size: 6em;
     font-weight:bold;
     text-shadow: 2px 2px 5px #FFF;
@@ -84,6 +97,9 @@ a:hover {
 }
 
 /* HEADER */
+.title {
+    height:400px;
+}
 
 .nav {
     text-decoration: none;
@@ -168,6 +184,11 @@ a:hover {
 }
 .joinlink a:hover {
     color:#669;
+}
+
+#calendar {
+    margin: 0 5% 5% 5%;
+    border-radius:10px;
 }
 
 /*CONTACTS PAGE*/
