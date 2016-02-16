@@ -13,7 +13,7 @@ var $formOverlay = $('<div id="overlay"></div>').append($(".joinform"));
     
 $('.joinlink').click(function(event){
         event.preventDefault();
-            $formOverlay.show();
+           $formOverlay.show();
   });
     
 //When overlay is double clicked, hide overlay
@@ -27,7 +27,7 @@ $("#join").submit(function(event) {
   if ($("#firstname").val().length > 0 && $("#lastname").val().length > 0 && $("#email").val().length > 0) {
     return;
   }else{
-  $("span").text("please complete required fields").show().fadeOut(3000);
+  $(".reminder").text("please complete required fields").show().fadeOut(3000);
   event.preventDefault();
     }
 });
