@@ -4,7 +4,7 @@
 /* TEXT RULES */
 h1 {
     font-size: 11vw;
-    margin: 1% 0 10% 5%;
+    margin: 10% 0 10% 5%;
 }
 
 h2 {
@@ -30,8 +30,8 @@ h5 {
     font-size: 0.9em;
     box-shadow: -5px 5px 30px #006;
     border-radius: 0px 0px 30px 30px;
-    border-width: 0px 8px 5px 4px;
-    padding: 5px 10px 12px 10px;
+   /* border-width: 0px 8px 5px 4px;
+    padding: 5px 10px 12px 10px;*/
     display:inline-block;
     position:absolute;
 }
@@ -76,7 +76,8 @@ h5 {
 /* TEXT RULES */
 
 h1 {
-    margin: 4% 0 20% 2%;
+    font-size: 17vw;
+    margin-top: 150px;
 }
 
 h2 {
@@ -134,4 +135,17 @@ p {
 .icons a {
     font-size: 1.2em;
 }
+    
+.joinlink a {
+    font-size: 10vw;  
 }
+   
+    
+
+
+
+
+
+
+
+

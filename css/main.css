@@ -1,10 +1,10 @@
 /* BACKGROUND PHOTOS */
 
 .home {
-    background-image:url(backgroundimages/bridges3.jpg);
+    background-image:url(backgroundimages/Skyline.jpg);
 }
 .about {
-    background-image:url(backgroundimages/bridges3.jpg);
+    background-image:url(backgroundimages/bridges.jpg);
 }
 .contact {
     background-image:url(backgroundimages/reservoir.jpg);
@@ -28,13 +28,18 @@ h1 {
     font-family:'Monserrat', sans-serif;
     font-size:7.5em;
     font-style:italic;
-    margin: 1% 0 1% 15%;
     background-color: #006;
     color: transparent;
-    text-shadow: 0px 2px 3px rgba(255,255,255,0.7);
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.95);
     -webkit-background-clip: text;
         -moz-background-clip: text;
             background-clip: text;
+    margin: 5% 0 1% 2%;
+    width: 75%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    
 }
 
 h2 {
@@ -43,7 +48,7 @@ h2 {
     font-style:italic;
     background-color: #006;
     color: transparent;
-    text-shadow: 0px 2px 3px rgba(255, 204, 51,0.85);
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.85);
     -webkit-background-clip: text;
         -moz-background-clip: text;
             background-clip: text;
@@ -154,7 +159,7 @@ a:hover {
 /* CONTENT */
 
 .divLeft {
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(255,255,255,0.9);
     border-radius:0px 30px 30px 0px;
     box-shadow: 5px 5px 10px #006;
     border-width: 3px 12px 10px 0px;
@@ -163,7 +168,7 @@ a:hover {
 }
 
 .divRight {
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(255,255,255,0.9);
     border-radius:30px 0px 0px 30px;
     box-shadow: -5px 5px 30px #006;
     border-width: 3px 0px 10px 12px;
