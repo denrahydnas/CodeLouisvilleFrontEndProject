@@ -16,7 +16,6 @@
     background-image:url(backgroundimages/watertower.jpg);
 }
 body {
-    background-repeat: no-repeat;
     background-size:cover;
     margin:0;
     padding:0;
@@ -25,43 +24,30 @@ body {
 /* TEXT RULES */
 
 h1 {
-    font-family:'Monserrat', sans-serif;
-    font-size:7.5em;
-    font-style:italic;
-    background-color: #006;
-    color: transparent;
-    text-shadow: 0px 2px 3px rgba(255,255,255,0.95);
-    -webkit-background-clip: text;
-        -moz-background-clip: text;
-            background-clip: text;
-    margin: 5% 0 1% 2%;
+    font-family:'Open Sans', sans-serif;
+    font-weight: '700';
+    font-size:9em;
+    color: #FFF;
+    text-shadow: 4px 4px 10px #006;
+    margin:-30px 0 0 0;
+    padding:0;
     width: 75%;
-    position:absolute;
-    top: 0;
-    left: 0;
-    
 }
 
 h2 {
-    font-family:'Montserrat', sans-serif;
-    font-size:7em;
-    font-style:italic;
-    background-color: #006;
-    color: transparent;
-    text-shadow: 0px 2px 3px rgba(255,255,255,0.85);
-    -webkit-background-clip: text;
-        -moz-background-clip: text;
-            background-clip: text;
-    margin: 5% 0 1% 2%;
+    font-family:'Open Sans', sans-serif;
+    font-weight: '300';
+    font-size:4em;
+    color: #FFF;
+    text-shadow: 4px 4px 10px #006;
+    margin:0 0 0 8px;
+    padding:0;
     width: 75%;
-    position:absolute;
-    top: 0;
-    left: 0;
 }
 
 h3 {
     color:#006;
-    font-family:'Montserrat', sans-serif;
+    font-family:'Open Sans', sans-serif;
     font-size: 6em;
     font-weight:bold;
     text-shadow: 2px 2px 5px #FFF;
@@ -104,6 +90,7 @@ a:hover {
 /* HEADER */
 .title {
     height:400px;
+    margin: 100px 0 0 30px;
 }
 
 .nav {
@@ -178,7 +165,7 @@ a:hover {
 
 .joinlink {
     background-color:#006;
-    font-family:'Montserrat', Arial, sans-serif;
+    font-family:'Open Sans', Arial, sans-serif;
     font-size: 3em;
     text-align: center;
     display:block;
@@ -243,6 +230,12 @@ a:hover {
     color:#FC3;
     box-shadow: 2px 2px 10px #000;
 }
+.joinform #submit:hover {
+    box-shadow: 2px 2px 10px #FFF;
+}
+.joinform #submit:focus {
+    box-shadow: 2px 2px 10px #FFF;
+}
 #overlay {
     background:rgba(0,0,102,0.5);
     width:100%;
@@ -264,6 +257,12 @@ a:hover {
     color:#FC3;
     box-shadow: 2px 2px 10px #000;
     margin:5% 45% 0 45%;
+}
+#ideasubmit:hover {
+    box-shadow: 2px 2px 10px #FC3;
+}
+#ideasubmit:focus {
+    box-shadow: 2px 2px 10px #FC3;
 }
 
 .ideas #projectidea {

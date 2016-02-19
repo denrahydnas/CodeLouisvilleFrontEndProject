@@ -4,12 +4,12 @@
 /* TEXT RULES */
 h1 {
     font-size: 11vw;
-    margin: 10% 0 10% 5%;
+    margin: 0 0 10% 5%;
 }
 
 h2 {
-    font-size: 12vw;
-    margin: 2% 0 1% 1%;
+    font-size: 5vw;
+    margin: 0 0 0 1%;
 }
     
 h3 {
@@ -76,12 +76,13 @@ h5 {
 /* TEXT RULES */
 
 h1 {
-    font-size: 17vw;
-    margin-top: 150px;
+    font-size: 13vw;
+    margin: 0 0 5% 5%;
 }
 
 h2 {
-    margin: 25% 0 1% 1%;
+    font-size: 6vw;
+    margin: 15% 0 0 1%;
 }
 
 h3 {
