@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-$('ul').hide();
+$('.nav ul').hide();
 
 $('.nav').mouseenter(function(){
     $('.nav').css('background', "#FFF");
@@ -13,7 +13,7 @@ $('.nav').mouseleave(function(){
 });
     
 $(".nav").click(function(){
-    $("ul").slideToggle();
+    $(".nav ul").slideToggle();
 });  
       
 });

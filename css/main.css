@@ -4,13 +4,13 @@
     background-image:url(backgroundimages/Skyline.jpg);
 }
 .about {
-    background-image:url(backgroundimages/bridges.jpg);
+    background-image:url(backgroundimages/bridges2.jpg);
 }
 .contact {
-    background-image:url(backgroundimages/reservoir.jpg);
+    background-image:url(backgroundimages/stjames.jpg);
 }
 .activities {
-    background-image:url(backgroundimages/watertower.jpg);
+    background-image:url(backgroundimages/bat.jpg);
 }
 .projects {
     background-image:url(backgroundimages/watertower.jpg);
@@ -25,7 +25,7 @@ body {
 
 h1 {
     font-family:'Open Sans', sans-serif;
-    font-weight: '700';
+    font-weight:700;
     font-size:9em;
     color: #FFF;
     text-shadow: 4px 4px 10px #006;
@@ -36,7 +36,7 @@ h1 {
 
 h2 {
     font-family:'Open Sans', sans-serif;
-    font-weight: '300';
+    font-weight:300;
     font-size:4em;
     color: #FFF;
     text-shadow: 4px 4px 10px #006;
@@ -67,7 +67,7 @@ h5 {
     color:#006;
     font-family:'Catamaran', sans-serif;
     font-size: 3em;
-    font-weight:bold;
+    font-weight:400;
     margin:0;
     padding:0;
 }
@@ -281,10 +281,12 @@ a:hover {
     padding: 1px;
 }
 
+/* CONTACT PAGE */
 
-
-
-
+.icons a {
+    padding:0;
+    margin:0;
+}
 
 
 
