@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html>
 <meta charset = "utf=8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
-      <title> Louisville Rotaract - About</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Catamaran' rel='stylesheet' type='text/css'>
+      <title> About Louisville Rotaract</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,300|Catamaran:400,100' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootmain.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" charset="utf-8">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
-        <header>
-            <span class="nav">
+         <header>
+             <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
                 <img id="logo" src="img/rotaractLouLogo.svg" width=200px>
+                 <br><b class="caret"></b>
                     <ul>
-                        <li><a href="index.html" class="selected">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="selected">About</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="activities.html">Activities</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-            </span>
-                <div class="headline">
-                    <h3>Meet <br>
-                    Louisville Rotaract</h3>
-                </div>
+            </nav>
+            <div class="title2 jumbotron">
+                <h2>Meet Louisville</h2><h1>Rotaract</h1> 
+            </div>
         </header>
     <body class="about">
-            <div class="divLeft">
-                <p>Bi-monthly meetings feature business and civic leaders as speakers, and the club hosts regular leadership and professional development workshops. Gain leadership skills by leading projects and planning events and fundraisers, and practice your public speaking skills at meetings. Ask us about joining the club leadership by taking a position on our board. 
-                </p>
-            </div>
             <div class="divRight">
-                <img id="photo1" src="img/Rotaract1.jpg">
+                <img class="photo img-responsive center-block" src="img/Rotaract1.jpg" alt="Rotaract and Rotary members meet" width=85%>
                     <p>Louisville Rotaract members can take advantage of the district mentorship program, and volunteer alongside members of our sponsor club, the Downtown Louisville Rotary Club, which counts over 200 of Louisville’s business and community leaders among its membership. Through these connections, Rotaractors meet, network with, and volunteer alongside some of the city’s most influential professional leaders. 
                     </p>
             </div>
+            <div class="divLeft">
+                <img class="photo img-responsive center-block" src="img/project5.jpg" alt="Rotaract family">
+                    <p>Bi-monthly meetings feature business and civic leaders as speakers, and the club hosts regular leadership and professional development workshops. Gain leadership skills by leading projects and planning events and fundraisers, and practice your public speaking skills at meetings. Ask us about joining the club leadership by taking a position on our board. 
+                    </p>
+            </div>
+
     </body>
         <footer>
             <div class="credits">

@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html>
 <meta charset = "utf=8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
-      <title> Louisville Rotaract - Projects</title>
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Catamaran' rel='stylesheet' type='text/css'>
+      <title> Projects -- Louisville Rotaract</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,300|Catamaran:400,100' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/bootmain.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" charset="utf-8">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
-        <header>
-             <span class="nav">
+         <header>
+             <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
                 <img id="logo" src="img/rotaractLouLogo.svg" width=200px>
+                 <br><b class="caret"></b>
                     <ul>
-                        <li><a href="index.html" class="selected">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" >About</a></li>
+                        <li><a href="projects.html" class="selected">Projects</a></li>
                         <li><a href="activities.html">Activities</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-            </span>
-            <div class="headline">
-                <h3>Service Projects</h3>
+            </nav>
+            <div class="title3 jumbotron">
+                <h2>Rotaract</h2><h1>Projects</h1> 
             </div>
         </header>
     <body class="projects">
             <div class="divLeft">
-                <p>Rotaract members identify needs in our community and work to fill them, by proposing, planning, and carrying out ideas for service projects both here in the Ohio Valley and around the world. From sorting food, to planting trees to increase Louisville's tree canopy with Love Louisville Trees and sorting textbooks to send to South Africa, we regularly participate in a wide variety of service projects. </p>
+                <img class="photo img-responsive center-block" src="img/project3.jpg" alt="Rotaract members working together">
+                    <p>Rotaract members identify needs in our community and work to fill them, by proposing, planning, and carrying out ideas for service projects both here in the Ohio Valley and around the world. From sorting food, to planting trees to increase Louisville's tree canopy with Love Louisville Trees and sorting textbooks to send to South Africa, we regularly participate in a wide variety of service projects. </p>
             </div>
-            <div class="divRight">
-                <h5>projects: upcoming, current and past</h5>    
+            <div class="divRight"> <!--add flickr or facebook feed-->
+                <h5>projects: upcoming, current and past</h5> 
+                    <img class="photo img-responsive center-block" src="img/project1.jpg" alt="End polio infographic">
             </div>
             <div class="joinlink">
                 <a>Join Louisville Rotaract</a>
@@ -69,7 +76,7 @@
                           <textarea id="projectidea" name="projectidea" type="textbox"></textarea>
 		              </p>
 		              <p>
-			             <label for="request">Can we contact you for more information?</label>
+			             <label for="request">May we contact you for more information?</label>
 			            Y<input id="Y" type="radio" name="contactok" value="Y"> 
                         N<input id="N" type="radio" name="contactok" value="N"> 
 		              </p>

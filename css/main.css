@@ -1,49 +1,53 @@
-/* BACKGROUND PHOTOS */
+/* JumboTron */
 
-.home {
-    background-image:url(backgroundimages/Skyline.jpg);
-}
-.about {
-    background-image:url(backgroundimages/bridges2.jpg);
-}
-.contact {
-    background-image:url(backgroundimages/stjames.jpg);
-}
-.activities {
-    background-image:url(backgroundimages/bat.jpg);
-}
-.projects {
-    background-image:url(backgroundimages/watertower.jpg);
-}
 body {
-    background-size:cover;
+    background-color:#b7b1fd;
     margin:0;
     padding:0;
 }
 
-/* TEXT RULES */
 
-h1 {
+.title2 {
+    background-image: url(backgroundimages/churchill.png);
+}
+.title3 {
+    background-image: url(backgroundimages/watertower.png);
+}
+.title4 {
+    background-image: url(backgroundimages/21C.png);
+}
+.title5 {
+    background-image: url(backgroundimages/bridges.png);
+}
+
+.jumbotron {
+    background-size: cover;
+    /*max-height:632px;*/
+    padding-top:20%;
+    border-bottom: 30px solid #006;
+    background-repeat:no-repeat;
+}
+
+.jumbotron h1 {
     font-family:'Open Sans', sans-serif;
     font-weight:700;
-    font-size:9em;
-    color: #FFF;
+    font-size:14em;
+    color: #fff;
     text-shadow: 4px 4px 10px #006;
     margin:-30px 0 0 0;
     padding:0;
-    width: 75%;
 }
-
-h2 {
+.jumbotron h2 {
     font-family:'Open Sans', sans-serif;
     font-weight:300;
-    font-size:4em;
-    color: #FFF;
+    font-size:8em;
+    color: #fff;
     text-shadow: 4px 4px 10px #006;
-    margin:0 0 0 8px;
+    margin:-30px 0 0 3px;
     padding:0;
-    width: 75%;
 }
+
+/* TEXT RULES */
 
 h3 {
     color:#006;
@@ -68,14 +72,14 @@ h5 {
     font-family:'Catamaran', sans-serif;
     font-size: 3em;
     font-weight:400;
-    margin:0;
+    margin:0 0 40px 0;
     padding:0;
 }
 
 p {
     color:#006;
     font-family:'Catamaran', Arial, sans-serif;
-    font-size: 1.4em;
+    font-size: 1.8em;
 }
 
 a {
@@ -87,13 +91,8 @@ a:hover {
     color: #FC3;
 }
 
-/* HEADER */
-.title {
-    height:400px;
-    margin: 100px 0 0 30px;
-}
-
-.nav {
+/* NAVIGATION */
+nav {
     text-decoration: none;
     text-align:center;
     font-family: 'Catamaran', Arial, sans-serif;
@@ -109,28 +108,10 @@ a:hover {
     top:0;
     right:3%;
 }
-.nav ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.projects .headline {
-    margin: 8% 25% 8% 25%;
-    padding:0;
-    
-}
-.about .headline {
-    margin:3% 10% 5% 8%;
-    padding:0;
-}
-.activities .headline {
-    margin:8% 25% 8% 25%;
-    padding:0;
-}
-.contact .headline {
-    margin:8% 25% 8% 25%;
-    padding:0;
 }
 
 /* FOOTER */
@@ -150,7 +131,7 @@ a:hover {
     border-radius:0px 30px 30px 0px;
     box-shadow: 5px 5px 10px #006;
     border-width: 3px 12px 10px 0px;
-    margin: 3% 20% 5% 0%;
+    margin: 3% 20% 3% 0%;
     padding: 2%; 
 }
 
@@ -159,8 +140,8 @@ a:hover {
     border-radius:30px 0px 0px 30px;
     box-shadow: -5px 5px 30px #006;
     border-width: 3px 0px 10px 12px;
-    margin: 3% 0% 5% 10%;
-    padding: 1% 25% 2% 2%;
+    margin: 3% 0% 3% 10%;
+    padding: 2% 20% 2% 2%
 }
 
 .joinlink {
@@ -185,33 +166,29 @@ a:hover {
 
 /*CONTACTS PAGE*/
 
-#links {
-    text-align:center;
-}
-
-.icons td {
-    padding: 10px;
-    height: 50px;
-    width: 300px;
-    vertical-align: middle;
-    text-align:center;    
-}
 .icons a {
     font-size: 2em;
+    margin-top: 30px;
 }
 
 
 /* PHOTOS */
 
-#photo1 {
-    max-width: 50%;
+.photo {
     border-radius:25px;
-    border: 4px solid #FFCC33;
-    float:left; 
-    margin: 3% 2% 2% 0;
+    border: 4px solid #FFCC33; 
+    margin: 3%;
+}
+
+.photo1 {
+    max-width: 50%;
 }
 
 
+.slider-for img {
+    border-radius:25px;
+    border: 4px solid #FC3;
+}
 /* INTERACTIVE JOIN FORM */
 
 .joinform {

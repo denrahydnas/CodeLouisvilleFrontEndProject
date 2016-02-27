@@ -2,14 +2,12 @@
     /* tablets and phones in portrait*/
 
 /* TEXT RULES */
-h1 {
-    font-size: 11vw;
-    margin: 0 0 10% 5%;
+.jumbotron h1 {
+    font-size: 17vw;
 }
 
-h2 {
-    font-size: 5vw;
-    margin: 0 0 0 1%;
+.jumbotron h2 {
+    font-size: 14vw;
 }
     
 h3 {
@@ -26,7 +24,7 @@ h5 {
 
 /* HEADER */
 
-.nav {
+nav {
     font-size: 0.9em;
     box-shadow: -5px 5px 30px #006;
     border-radius: 0px 0px 30px 30px;
@@ -35,22 +33,9 @@ h5 {
     display:inline-block;
     position:absolute;
 }
-.nav #logo {
+nav #logo {
         width: 125px;
     }
-
-.projects .headline {
-    margin-left: 10%;
-}
-.about .headline {
-    margin-left: 10%;
-}
-.activities .headline {
-    margin-left: 10%;
-}
-.contact .headline {
-    margin-left: 10%;
-}
 
 /* CONTENT */
 
@@ -75,13 +60,13 @@ h5 {
 
 /* TEXT RULES */
 
-h1 {
-    font-size: 13vw;
+.jumbotron h1 {
+    font-size: 15vw;
     margin: 0 0 5% 5%;
 }
 
-h2 {
-    font-size: 6vw;
+.jumbotron h2 {
+    font-size: 12vw;
     margin: 15% 0 0 1%;
 }
 
@@ -100,26 +85,14 @@ p {
 
 /* HEADER */
 
-.nav {
+nav {
     display:none,
     /* use Jquery to create dropdown*/
 }
-.nav #logo {
+nav #logo {
         width: 100px;
 }
     
-.projects .headline {
-    margin-left: 5%;
-}
-.about .headline {
-    margin-left: 5%;
-}
-.activities .headline {
-    margin-left: 5%;
-}
-.contact .headline {
-    margin-left: 5%;
-}
 
 /* CONTENT */
 
