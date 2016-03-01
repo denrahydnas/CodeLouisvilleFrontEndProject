@@ -62,9 +62,9 @@ h3 {
 h4 {
     color:#006;
     font-family:'Catamaran', sans-serif;
-    font-size: 4em;
+    font-size: 5em;
     font-weight:bold;
-    margin:0;
+    padding:0 2% 0 0;
 }
 
 h5 {
@@ -100,7 +100,7 @@ nav {
     font-size: 1.2em;
     background-color:rgba(255,255,255,0.9);
     box-shadow: -5px 5px 10px #006;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 2em 2em;
     border-width: 0px 8px 5px 4px;
     padding: 5px 10px 15px 10px;
     display:inline-block;
@@ -128,7 +128,7 @@ nav ul {
 
 .divLeft {
     background-color:rgba(255,255,255,0.9);
-    border-radius:0px 30px 30px 0px;
+    border-radius:0 2em 2em 0;
     box-shadow: 5px 5px 10px #006;
     border-width: 3px 12px 10px 0px;
     margin: 3% 20% 3% 0%;
@@ -137,11 +137,11 @@ nav ul {
 
 .divRight {
     background-color:rgba(255,255,255,0.9);
-    border-radius:30px 0px 0px 30px;
+    border-radius:2em 0 0 2em;
     box-shadow: -5px 5px 30px #006;
     border-width: 3px 0px 10px 12px;
-    margin: 3% 0% 3% 10%;
-    padding: 2% 20% 2% 2%
+    margin: 1% 0% 3% 10%;
+    padding: 3% 20% 3% 2%
 }
 
 .joinlink {
@@ -157,10 +157,11 @@ nav ul {
 }
 .joinlink a:hover {
     color:#669;
+    text-decoration:none;
 }
 
 #calendar {
-    margin: 0 5% 5% 5%;
+    margin: 2% 5% 5% 5%;
     border-radius:10px;
 }
 
@@ -168,16 +169,16 @@ nav ul {
 
 .icons a {
     font-size: 2em;
-    margin-top: 30px;
+    vertical-align: bottom
 }
 
 
 /* PHOTOS */
 
 .photo {
-    border-radius:25px;
+    border-radius:2em;
     border: 4px solid #FFCC33; 
-    margin: 3%;
+    margin: 0 2% 1% 0;
 }
 
 .photo1 {
@@ -186,7 +187,7 @@ nav ul {
 
 
 .slider-for img {
-    border-radius:25px;
+    border-radius:2em;
     border: 4px solid #FC3;
 }
 /* INTERACTIVE JOIN FORM */
@@ -197,7 +198,7 @@ nav ul {
     border: 8px solid #006;
     margin:0 5% 0 5%;
     text-align:center;
-    border-radius:30px;
+    border-radius:2em;
 }
 .joinform #submit {
     background-color:#006;
@@ -259,12 +260,4 @@ nav ul {
 }
 
 /* CONTACT PAGE */
-
-.icons a {
-    padding:0;
-    margin:0;
-}
-
-
-
 

@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="css/bootmain.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" charset="utf-8">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -16,7 +15,7 @@
   </head>
          <header>
              <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
-                <img id="logo" src="img/rotaractLouLogo.svg" width=200px>
+                <img id="logo" src="img/rotaractLouLogo.svg" alt="Rotaract Louisville logo" width=200px>
                  <br><b class="caret"></b>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -31,15 +30,19 @@
             </div>
         </header>
     <body class="projects">
-            <div class="divLeft">
-                <img class="photo img-responsive center-block" src="img/project3.jpg" alt="Rotaract members working together">
+            <div class="row divLeft">
+                <div class="col-md-offset-1 col-md-11">
+                    <img class="photo img-responsive center-block" src="img/project3.jpg" alt="Rotaract members working together">
                     <p>Rotaract members identify needs in our community and work to fill them, by proposing, planning, and carrying out ideas for service projects both here in the Ohio Valley and around the world. From sorting food, to planting trees to increase Louisville's tree canopy with Love Louisville Trees and sorting textbooks to send to South Africa, we regularly participate in a wide variety of service projects. </p>
+                </div>
             </div>
-            <div class="divRight"> <!--add flickr or facebook feed-->
+            <div class="row divRight">
+                <div class="col-md-11"> <!--add facebook feed-->
                 <h5>projects: upcoming, current and past</h5> 
                     <img class="photo img-responsive center-block" src="img/project1.jpg" alt="End polio infographic">
+                </div>
             </div>
-            <div class="joinlink">
+            <div class="joinlink container-fluid">
                 <a>Join Louisville Rotaract</a>
             </div>
             <div class="joinform">
@@ -68,8 +71,9 @@
 		              </p>
 	               </form>
                 </div>
-            <div class="divLeft">
-                <h5>Have an idea for a Rotaract service project?</h5>
+           <div class="row divLeft">
+                <div class="col-md-offset-1 col-md-11">
+                    <h5>Have an idea for a Rotaract service project?</h5>
                     <form class="ideas" action="#" method="post">
 		              <p>
 			             <label for="comment">Please tell us about it:</label><br>
@@ -93,6 +97,7 @@
 			             <input id="ideasubmit" type="submit" value="SUBMIT">
 		              </p>
 	               </form>
+               </div>
             </div>
     </body>
        <footer>

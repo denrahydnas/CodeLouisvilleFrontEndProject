@@ -10,7 +10,6 @@
         <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="css/bootmain.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" charset="utf-8">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -18,7 +17,7 @@
   </head>
          <header>
              <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
-                <img id="logo" src="img/rotaractLouLogo.svg" width=200px>
+                <img id="logo" src="img/rotaractLouLogo.svg" alt="Rotaract Louisville logo" width=200px>
                  <br><b class="caret"></b>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -33,14 +32,14 @@
             </div>
         </header>
     <body class="activities">
-            <div class="divLeft slick">
-                <div class="slider slider-for">
-                    <div><img class="img-rounded center-block" index="0" src="img/slideshow/slide1.png" alt="Rotaract graphic" width=60%></div>
-                    <div><img class="img-rounded center-block" index="1" src="img/slideshow/slide2.jpg" alt="Rotaract graphic" width=60%></div>
-                    <div><img class="img-rounded center-block" index="2" src="img/slideshow/slide3.jpg" alt="Rotaract graphic" width=60%></div>
-                    <div><img class="img-rounded center-block" index="3" src="img/slideshow/slide4.png" alt="Rotaract graphic" width=60%></div>
-                    <div><img class="img-rounded center-block" index="4" src="img/slideshow/slide5.jpg" alt="Rotaract graphic" width=60%></div>
-                    <div><img class="img-rounded center-block" index="6" src="img/slideshow/slide7.jpg" alt="Rotaract graphic" width=60%></div>
+            <div class="row divLeft slick">
+                <div class="slider slider-for col-md-offset-.5 col-md-11.5">
+                    <div><img class="img-rounded center-block img-responsive" index="0" src="img/slideshow/slide1.png" alt="Rotaract graphic" width=60%></div>
+                    <div><img class="img-rounded center-block img-responsive" index="1" src="img/slideshow/slide2.jpg" alt="Rotaract graphic" width=60%></div>
+                    <div><img class="img-rounded center-block img-responsive" index="2" src="img/slideshow/slide3.jpg" alt="Rotaract graphic" width=60%></div>
+                    <div><img class="img-rounded center-block img-responsive" index="3" src="img/slideshow/slide4.png" alt="Rotaract graphic" width=60%></div>
+                    <div><img class="img-rounded center-block img-responsive" index="4" src="img/slideshow/slide5.jpg" alt="Rotaract graphic" width=60%></div>
+                    <div><img class="img-rounded center-block img-responsive" index="6" src="img/slideshow/slide7.jpg" alt="Rotaract graphic" width=60%></div>
                 </div>
                 <div class="slider slider-nav">
                     <div><img class="img-rounded center-block" index="0" src="img/slideshow/slide1.png" alt="Rotaract graphic" width=20%></div>
@@ -51,7 +50,7 @@
                     <div><img class="img-rounded center-block" index="6" src="img/slideshow/slide7.jpg" alt="Rotaract graphic" width=20%></div>
                 </div>
             </div>
-            <div class="joinlink">
+            <div class="joinlink container-fluid">
                 <a>Join Louisville Rotaract</a>
             </div>
              <div class="joinform">
@@ -81,11 +80,13 @@
 		              </p>
 	               </form>
                 </div>
-        <div class="divRight">
+       <div class="row divRight">
+                <div class="col-md-11">
                     <p>We'd love for you to join us for a club meeting or event.<br> Check out what activities we have coming up. See you there!
                     </p> 
                 <iframe id="calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffcc00&amp;src=0fl2kg3k9rjt8euq4us4fmbbo8%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border:solid 4px #006" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
+        </div>
     </body>
         <footer>
             <div class="credits">

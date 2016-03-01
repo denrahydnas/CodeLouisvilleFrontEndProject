@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="css/bootmain.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" charset="utf-8">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -16,7 +15,7 @@
   </head>
         <header>
              <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
-                <img id="logo" src="img/rotaractLouLogo.svg" width=200px>
+                <img id="logo" src="img/rotaractLouLogo.svg" alt="Louisville Rotaract logo" width=200px>
                  <br><b class="caret"></b>
                     <ul>
                         <li><a href="index.html" class="selected">Home</a></li>
@@ -31,20 +30,22 @@
             </div>
         </header>
     <body class="home">
-            <div class="divLeft">
-                <img class="photo photo1 pull-left img-responsive" src="img/rotaract2.jpg" alt="Rotaract group">
-                    <p><strong>Rotaract</strong> originally began in 1968 as a Rotary International youth program in Charlotte, North Carolina. Now Rotaract is a major Rotary-sponsored organization of nearly 10,000 clubs around the world. We are a service, leadership and community service organization for young men and women between the ages 18–30. Clubs around the world take part in local, national and international service projects in a global effort to bring peace and international understanding to the world. 
-                    </p>
-                    <p>    
-                    Rotary is dedicated to putting “Service above Self”. Its members are leaders in their communities, committed to promoting ethical business practices, strengthening the economic, social, and cultural vitality of their communities, and promoting international peace and understanding. Together, Rotary and Rotaract clubs know that our work is most successful when we come together as people from different backgrounds to tackle the challenges facing our communities. 
-                    </p>
+        <div class="row divLeft">
+                <div class="col-md-offset-.5 col-md-11.5">
+                    <img class="photo photo1 pull-left img-responsive" src="img/rotaract2.jpg" alt="Rotaract group">
+                        <p><strong>Rotaract</strong> originally began in 1968 as a Rotary International youth program in Charlotte, North Carolina. Now Rotaract is a major Rotary-sponsored organization of nearly 10,000 clubs around the world. We are a service, leadership and community service organization for young men and women between the ages 18–30. Clubs around the world take part in local, national and international service projects in a global effort to bring peace and international understanding to the world. <br>
+                        Rotary is dedicated to putting “Service above Self”. Its members are leaders in their communities, committed to promoting ethical business practices, strengthening the economic, social, and cultural vitality of their communities, and promoting international peace and understanding. Together, Rotary and Rotaract clubs know that our work is most successful when we come together as people from different backgrounds to tackle the challenges facing our communities. 
+                        </p>
+                </div>
             </div>
-            <div class="divRight">
+            <div class="row divRight">
+                <div class="col-md-11">
                 <h4>Rotaract = Rotary in Action</h4>
                     <img class="photo img-responsive center-block" src="img/project2.png" alt="Rotaract in action">
                         <p>Rotaract is a group made up of young professionals interested in leadership, professional development, community service, and having fun. Rotaract members identify needs in our community and work to fill them, by proposing, planning, and carrying out ideas for service projects both locally and internationally. From sorting food at food banks, to planting trees at local parks, and sorting textbooks to send to South Africa, Rotaractors regularly participate in a wide variety of service projects and make great friends along the way . </p>
+                </div>
             </div>
-            <div class="joinlink">          <!--add keyboard accessiblity and ARIA-->
+            <div class="joinlink container-fluid">          <!--add keyboard accessiblity and ARIA-->
                 <a>Join Louisville Rotaract</a>
             </div>
             <div class="joinform">          <!--connect to MailChimp API-->
@@ -74,10 +75,12 @@
 		              </p>
 	               </form>
                 </div>
-            <div class="divLeft">
+        <div class="row divLeft">
+                <div class="col-md-offset-.5 col-md-11.5">
                 <h4>Upcoming events</h4>
                 <iframe id="calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffcc00&amp;src=0fl2kg3k9rjt8euq4us4fmbbo8%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border:solid 4px #006" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
+        </div>
     </body>
         <footer>
             <div class="credits">

@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="css/bootmain.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen" charset="utf-8">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -16,7 +15,7 @@
   </head>
          <header>
              <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
-                <img id="logo" src="img/rotaractLouLogo.svg" width=200px>
+                <img id="logo" src="img/rotaractLouLogo.svg" alt="Louisville Rotaract logo" width=200px>
                  <br><b class="caret"></b>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -27,19 +26,53 @@
                     </ul>
             </nav>
             <div class="title2 jumbotron">
-                <h2>Meet Louisville</h2><h1>Rotaract</h1> 
+                <h2>About</h2><h1>Rotaract</h1> 
             </div>
         </header>
     <body class="about">
-            <div class="divRight">
-                <img class="photo img-responsive center-block" src="img/Rotaract1.jpg" alt="Rotaract and Rotary members meet" width=85%>
-                    <p>Louisville Rotaract members can take advantage of the district mentorship program, and volunteer alongside members of our sponsor club, the Downtown Louisville Rotary Club, which counts over 200 of Louisville’s business and community leaders among its membership. Through these connections, Rotaractors meet, network with, and volunteer alongside some of the city’s most influential professional leaders. 
+            <div class="row divRight">
+                <div class="col-md-11">
+                    <img class="photo img-responsive center-block" src="img/Rotaract1.jpg" alt="Rotaract and Rotary members meet" >
+                        <p>Louisville Rotaract members can take advantage of the district mentorship program, and volunteer alongside members of our sponsor club, the Downtown Louisville Rotary Club, which counts over 200 of Louisville’s business and community leaders among its membership. Through these connections, Rotaractors meet, network with, and volunteer alongside some of the city’s most influential professional leaders. 
                     </p>
+                </div>
             </div>
-            <div class="divLeft">
-                <img class="photo img-responsive center-block" src="img/project5.jpg" alt="Rotaract family">
+         <div class="joinlink container-fluid">          <!--add keyboard accessiblity and ARIA-->
+                <a>Join Louisville Rotaract</a>
+            </div>
+            <div class="joinform">          <!--connect to MailChimp API-->
+                    <h5>Thank you for your interest in joining Rotaract!</h5>
+                        <p> Please fill out the form below. We will contact you soon with more information about joining our club.<br>
+                            (starred items are required)</p>
+                    <form id="join" action="#" method="post">
+		              <p>
+			             <label for="firstname">First Name:*</label>
+			             <input id="firstname" name="firstname" type="text">
+		              </p>
+                      <p>
+			             <label for="lastname">Last Name:*</label>
+			             <input id="lastname" name="lastname" type="text">
+		              </p>
+		              <p>
+			             <label for="email">Please enter your email:*</label>
+			             <input id="email" name="email" type="text">
+		              </p>
+		              <p>
+			             <label for="phone">Please enter your phone number:</label>
+			             <input id="phone" name="phone" type="text">
+		              </p>
+                        <span class="reminder"></span>
+		              <p>
+			             <input id="submit" type="submit" value="Submit">
+		              </p>
+	               </form>
+                </div>
+            <div class="row divLeft">
+                <div class="col-md-offset-1 col-md-11">
+                    <img class="photo img-responsive center-block" src="img/project5.jpg" alt="Rotaract family">
                     <p>Bi-monthly meetings feature business and civic leaders as speakers, and the club hosts regular leadership and professional development workshops. Gain leadership skills by leading projects and planning events and fundraisers, and practice your public speaking skills at meetings. Ask us about joining the club leadership by taking a position on our board. 
                     </p>
+                </div>
             </div>
 
     </body>
@@ -49,5 +82,6 @@
             </div>
         </footer>
     <script src="//code.jquery.com/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/joinlink.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/navigation.js" type="text/javascript" charset="utf-8"></script>
 </html>
