@@ -17,7 +17,7 @@
              <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
                 <img id="logo" src="img/rotaractLouLogo.svg" alt="Louisville Rotaract logo" width=200px>
                  <br><b class="caret"></b>
-                    <ul>
+                    <ul class="sr-only-focusable">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html" class="selected">About</a></li>
                         <li><a href="projects.html">Projects</a></li>
@@ -30,18 +30,125 @@
             </div>
         </header>
     <body class="about">
-            <div class="row divRight">
-                <div class="col-md-11">
-                    <img class="photo img-responsive center-block" src="img/Rotaract1.jpg" alt="Rotaract and Rotary members meet" >
-                        <p>Louisville Rotaract members can take advantage of the district mentorship program, and volunteer alongside members of our sponsor club, the Downtown Louisville Rotary Club, which counts over 200 of Louisville’s business and community leaders among its membership. Through these connections, Rotaractors meet, network with, and volunteer alongside some of the city’s most influential professional leaders. 
+        <div class="row divLeft">
+                <div class="col-md-offset-1 col-md-11">
+                    <img class="photo photo1 pull-left img-responsive" src="img/rotaractLou1.jpg" alt="Rotaract family" width="60%">
+                    <p>The Rotaract Club of Louisville provides a fellowship of inspired business, professional and civic leaders with exceptional opportunities for humanitarian and civic service, while promoting integrity, understanding and goodwill on a local, national and worldwide basis. Monthly meetings feature business and civic leaders as speakers, and the club hosts regular leadership and professional development workshops. 
                     </p>
                 </div>
             </div>
+         <div class="row divRight">
+                <div class="col-md-11">
+                    <h5>Ask us about joining the club leadership by volunteering for one of the following commitees:</h5>
+                </div>
+        <div class="row committees">
+            <div class="col-md-offset-1 col-md-10">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                         <h6>Club service  <span class="caret"></span></h6>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <ul class="sr-only-focusable descr">
+                        <li>Develops strategies for recruiting new members and keeping current members active</li>
+                        <li>Publicizes the club’s activities to members and the general public</li>
+                        <li>Plans activities for networking and socializing</li>
+                        <li>Maintains a historical record, including pictures and descriptions of club activities</li>
+                    </ul>
+                   </div>
+                </div>
+              </div>
+                 <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         <h6>Community service  <span class="caret"></span></h6>
+                        </a>
+                      </h4>
+                    </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                            <ul class="sr-only-focusable descr">
+                                <li>Reviews suggestions from members for community service projects to ensure they address real needs and can be successfully carried out by the club</li>
+                                <li>Develops plans for the club’s annual community service project</li>
+                                <li>Leads, organizes, and implements the community service project</li>
+                            </ul>
+                         </div>
+                     </div>
+                </div>
+                 <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                         <h6>International service   <span class="caret"></span></h6>
+                        </a>
+                      </h4>
+                    </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <ul class="sr-only-focusable descr">
+                                <li>Reviews members’ suggestions for international service projects to ensure they address real needs and can be successfully carried out by the club</li>
+                                <li>Develops plans for the club’s annual international service project</li>
+                                <li>Leads, organizes, and implements the international service project</li>
+                                <li>Develops additional activities that promote international understanding among club members and in the community</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                 <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                         <h6>Professional development  <span class="caret"></span></h6>
+                        </a>
+                      </h4>
+                    </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <ul class="sr-only-focusable descr">
+                                <li>Solicits suggestions from club members for professional development activities</li>
+                                <li>Reviews and plans activities</li>
+                                <li>Explores resources in the community</li>
+                                <li>Leads, organizes, and implements the activities</li>
+                              </ul>
+                        </div>
+                     </div>
+                </div>
+            <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+                         <h6>Finance  <span class="caret"></span></h6>
+                        </a>
+                      </h4>
+                </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                            <ul class="sr-only-focusable descr">
+                                <li>Decides how the club will fund its activities</li>
+                                <li>Focuses on keeping dues low and maintaining the club’s ability to support itself</li>
+                                <li>Collects any district and club dues</li>
+                                <li>Seeks in-kind and monetary donations from businesses and organizations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
          <div class="joinlink container-fluid">          <!--add keyboard accessiblity and ARIA-->
                 <a>Join Louisville Rotaract</a>
             </div>
             <div class="joinform">          <!--connect to MailChimp API-->
-                    <h5>Thank you for your interest in joining Rotaract!</h5>
+                    <h5>Thank you for your interest in joining Rotaract!</h5> 
+                        <p>Rotaract Club of Louisville is always looking for talented young professionals wishing to get involved in our organization and the community.</p>
+
                         <p> Please fill out the form below. We will contact you soon with more information about joining our club.<br>
                             (starred items are required)</p>
                     <form id="join" action="#" method="post">
@@ -67,10 +174,10 @@
 		              </p>
 	               </form>
                 </div>
-            <div class="row divLeft">
-                <div class="col-md-offset-1 col-md-11">
-                    <img class="photo img-responsive center-block" src="img/project5.jpg" alt="Rotaract family">
-                    <p>Bi-monthly meetings feature business and civic leaders as speakers, and the club hosts regular leadership and professional development workshops. Gain leadership skills by leading projects and planning events and fundraisers, and practice your public speaking skills at meetings. Ask us about joining the club leadership by taking a position on our board. 
+             <div class="row divRight">
+                <div class="col-md-11">
+                    <img class="photo img-responsive center-block" src="img/Rotaract1.jpg" alt="Rotaract and Rotary members meet" width="70%">
+                        <p>Louisville Rotaract members can take advantage of the district mentorship program, and volunteer alongside members of our sponsor club, the Downtown Louisville Rotary Club, which counts over 200 of Louisville’s business and community leaders among its membership. Through these connections, Rotaractors meet, network with, and volunteer alongside some of the city’s most influential professional leaders. 
                     </p>
                 </div>
             </div>
@@ -84,4 +191,5 @@
     <script src="//code.jquery.com/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/joinlink.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/navigation.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 </html>

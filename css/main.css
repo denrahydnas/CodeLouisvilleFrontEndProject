@@ -49,6 +49,7 @@ body {
 
 /* TEXT RULES */
 
+
 h3 {
     color:#006;
     font-family:'Open Sans', sans-serif;
@@ -73,6 +74,15 @@ h5 {
     font-size: 3em;
     font-weight:400;
     margin:0 0 40px 0;
+    padding:0;
+}
+
+h6 {
+    color:#006;
+    font-family:'Catamaran', sans-serif;
+    font-size: 2em;
+    font-weight:400;
+    margin:0 0 0 0;
     padding:0;
 }
 
@@ -165,14 +175,6 @@ nav ul {
     border-radius:10px;
 }
 
-/*CONTACTS PAGE*/
-
-.icons a {
-    font-size: 2em;
-    vertical-align: bottom
-}
-
-
 /* PHOTOS */
 
 .photo {
@@ -259,5 +261,15 @@ nav ul {
     padding: 1px;
 }
 
-/* CONTACT PAGE */
+/* ABOUT PAGE */
+
+.committees li {
+    color:#006;
+    font-family:'Catamaran', sans-serif;
+    font-size: 1.5em;
+    font-weight:400;
+    margin:0 0 0 0;
+    padding:0;
+    list-style:circle;
+}
 

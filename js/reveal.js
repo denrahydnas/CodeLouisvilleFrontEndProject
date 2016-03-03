@@ -8,6 +8,5 @@ $('#Y').on("click", function(){
 $('#N').on("click", function(){
     $('.reveal').hide()
 });
- 
    
 });

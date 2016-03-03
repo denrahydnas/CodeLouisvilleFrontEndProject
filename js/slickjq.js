@@ -3,10 +3,10 @@ $(document).ready(function(){
  $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
     fade: true,
     asNavFor: '.slider-nav',
-    speed: 600
+    speed: 600,
+    adaptiveHeight:true
 });
 $('.slider-nav').slick({
     slidesToShow: 5,
@@ -14,9 +14,13 @@ $('.slider-nav').slick({
     asNavFor: '.slider-for',
     dots: false,
     focusOnSelect: true,
-    speed: 800
+    speed: 800,
+    touchMove:true,
 });
-	  
+
+$('.your-element').slick('slickNext');
+    
+$('.your-element').slick('slickPrev');
     
 });
 
