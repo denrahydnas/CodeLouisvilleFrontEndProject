@@ -37,7 +37,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: red;
     border: none;
     outline: none;
     background: transparent;
@@ -47,7 +47,7 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: red;
     outline: none;
     background: transparent;
 }
@@ -72,7 +72,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: red;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -160,7 +160,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: red;
     border: 0;
     outline: none;
     background: transparent;

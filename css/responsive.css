@@ -22,14 +22,15 @@ h5 {
     font-size: 6vw;
 }
 
+h6 {
+    font-size: 4vw;
+}
 /* HEADER */
 
 nav {
     font-size: 0.9em;
     box-shadow: -5px 5px 30px #006;
     border-radius: 0px 0px 30px 30px;
-   /* border-width: 0px 8px 5px 4px;
-    padding: 5px 10px 12px 10px;*/
     display:inline-block;
     position:absolute;
 }
@@ -41,17 +42,12 @@ nav #logo {
 
 .divLeft {
     margin: 10% 5% 5% 0%;
-    padding: 2%; 
+    padding: 2% 2% 5% 2%;
 }
 
 .divRight {
     margin: 10% 0% 5% 5%;
-    padding: 2%;
-}
-
-.icons a {
-    font-size: 1.5em;
-}
+    padding: 2% 2% 5% 2%;
 }
 
 
@@ -114,11 +110,14 @@ nav #logo {
     font-size: 10vw;  
 }
    
+.link object {
+    width:10%;
+    height:10%;
+    }
     
-
-
-
-
+.icons {
+    padding-bottom: 50px;
+    } 
 
 
 

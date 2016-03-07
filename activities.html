@@ -19,7 +19,7 @@
              <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
                 <img id="logo" src="img/rotaractLouLogo.svg" alt="Rotaract Louisville logo" width=200px>
                  <br><b class="caret"></b>
-                    <ul>
+                    <ul class="sr-only-focusable">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html" >About</a></li>
                         <li><a href="projects.html" >Projects</a></li>
@@ -31,9 +31,20 @@
                 <h2>Rotaract</h2><h1>Events</h1> 
             </div>
         </header>
-    <body class="activities">
+    <body>
+        
+<!-- welcome--> 
+       <div class="row divRight">
+                <div class="col-md-11">
+                    <p>Rotaractors love to get together for activities and events to learn more about our community and the world. From learning how to make international delicacies to attending local events like Louisville Worldfest, we have a great time whatever we're doing. 
+                    </p>  
+            </div>
+        </div>
+        
+<!-- slideshow-->
             <div class="row divLeft slick">
-                <div class="slider slider-for col-md-offset-.5 col-md-11.5">
+                <span class="icon-prev"></span>
+                <div class="slider slider-for col-md-offset-1 col-md-10">
                     <div><img class="img-rounded center-block img-responsive" index="0" src="img/slideshow/slide16.png" alt="Rotaract graphic" width=40%></div>
                     <div><img class="img-rounded center-block img-responsive" index="1" src="img/slideshow/slide2.jpg" alt="Rotaract graphic" width=40%></div>
                     <div><img class="img-rounded center-block img-responsive" index="2" src="img/slideshow/slide13.png" alt="Rotaract graphic" width=40%></div>
@@ -41,13 +52,13 @@
                     <div><img class="img-rounded center-block img-responsive" index="4" src="img/slideshow/slide5.jpg" alt="Rotaract graphic" width=40%></div>
                     <div><img class="img-rounded center-block img-responsive" index="5" src="img/slideshow/slide14.png" alt="Rotaract graphic" width=40%></div>
                     <div><img class="img-rounded center-block img-responsive" index="6" src="img/slideshow/slide7.jpg" alt="Rotaract graphic" width=40%></div>
-                    <div><img class="img-rounded center-block img-responsive" index="7" src="img/slideshow/slide10.jpg" alt="Rotaract graphic" width=60%></div>
                     <div><img class="img-rounded center-block img-responsive" index="8" src="img/slideshow/slide11.jpg" alt="Rotaract graphic" width=60%></div>
                     <div><img class="img-rounded center-block img-responsive" index="9" src="img/slideshow/slide12.jpg" alt="Rotaract graphic" width=60%></div>
                     <div><img class="img-rounded center-block img-responsive" index="10" src="img/slideshow/slide15.png" alt="Rotaract graphic" width=40%></div>
                     <div><img class="img-rounded center-block img-responsive" index="11" src="img/slideshow/slide1.png" alt="Rotaract graphic" width=40%></div>
                 </div>
-                <div class="slider slider-nav">
+                <span class="icon-next"></span>
+                <div class="slider slider-nav col-md-offset-2 col-md-8">
                     <div><img class="img-rounded center-block" index="0" src="img/slideshow/slide16.png" alt="Rotaract graphic" width=20%></div>
                     <div><img class="img-rounded center-block" index="1" src="img/slideshow/slide2.jpg" alt="Rotaract graphic" width=20%></div>
                     <div><img class="img-rounded center-block" index="2" src="img/slideshow/slide13.png" alt="Rotaract graphic" width=20%></div>
@@ -55,17 +66,18 @@
                     <div><img class="img-rounded center-block" index="4" src="img/slideshow/slide5.jpg" alt="Rotaract graphic" width=20%></div>
                     <div><img class="img-rounded center-block" index="5" src="img/slideshow/slide14.png" alt="Rotaract graphic" width=20%></div>
                     <div><img class="img-rounded center-block" index="6" src="img/slideshow/slide7.jpg" alt="Rotaract graphic" width=20%></div>
-                    <div><img class="img-rounded center-block" index="7" src="img/slideshow/slide10.jpg" alt="Rotaract graphic" width=20%></div>
                     <div><img class="img-rounded center-block" index="8" src="img/slideshow/slide11.jpg" alt="Rotaract graphic" width=20%></div>
                     <div><img class="img-rounded center-block" index="9" src="img/slideshow/slide12.jpg" alt="Rotaract graphic" width=20%></div>
                     <div><img class="img-rounded center-block" index="10" src="img/slideshow/slide15.png" alt="Rotaract graphic" width=20%></div>
                     <div><img class="img-rounded center-block" index="11" src="img/slideshow/slide1.png" alt="Rotaract graphic" width=20%></div>
                 </div>
             </div>
+        
+<!-- pop up link to form --> 
             <div class="joinlink container-fluid">
                 <a>Join Louisville Rotaract</a>
             </div>
-             <div class="joinform">                    
+             <div class="joinform sr-only-focusable">                    
                  <h5>Thank you for your interest in joining Rotaract!</h5> 
                         <p>Rotaract Club of Louisville is always looking for talented young professionals wishing to get involved in our organization and the community.</p>
 
@@ -94,11 +106,12 @@
 		              </p>
 	               </form>
                 </div>
+        
+<!-- facebook feed--> 
        <div class="row divRight">
                 <div class="col-md-11">
                     <p>We'd love for you to join us for a club meeting or event.<br> Follow us on <a>Facebook</a> to see what activities we have coming up. See you there!
-                    </p> 
-                
+                    </p>  
             </div>
         </div>
     </body>

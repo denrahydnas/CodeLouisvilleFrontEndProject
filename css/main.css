@@ -6,7 +6,6 @@ body {
     padding:0;
 }
 
-
 .title2 {
     background-image: url(backgroundimages/churchill.png);
 }
@@ -272,4 +271,57 @@ nav ul {
     padding:0;
     list-style:circle;
 }
+
+.fwdarrow, bckarrow {
+    background-color:#FC3;
+    border-radius:50%;
+}
+
+/* CONTACTS PAGE */
+
+.vert {
+    margin-bottom:3%;
+    display: flex;
+    align-items: center;
+}
+
+/* PROJECTS PAGE */
+
+.rating {
+ text-align: right;
+ -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+    margin: 30px 0;
+}
+
+.likes{
+   background: #FC3 ;
+     color: #006;
+     cursor: pointer;
+     display: inline-block;
+     font-size: 15px;
+   line-height: 40px;
+   min-width: 40px;
+   height: 40px;
+   border-radius: 50%;
+ margin: 0 -30px 0 40px;
+   text-align: center;
+   font-weight: 200;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   transition: background 500ms;
+}
+
+.likes:hover{
+ color: #FFF ;
+   background: rgba(0, 0, 102, 0.25);
+   transition: background 500ms;
+}
+
+.name {
+    display:inline-block;
+    margin-top:30px;
+}
+
+
 

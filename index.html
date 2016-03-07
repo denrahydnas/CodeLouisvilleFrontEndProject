@@ -13,11 +13,12 @@
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
+    
         <header>
              <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
                 <img id="logo" src="img/rotaractLouLogo.svg" alt="Louisville Rotaract logo" width=200px>
                  <br><b class="caret"></b>
-                    <ul>
+                    <ul class="sr-only-focusable">
                         <li><a href="index.html" class="selected">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="projects.html">Projects</a></li>
@@ -29,7 +30,8 @@
                 <h2>Louisville</h2><h1>Rotaract</h1> 
             </div>
         </header>
-    <body class="home">
+    
+    <body>
         <div class="row divLeft">
                 <div class="col-md-offset-.5 col-md-11.5">
                     <img class="photo photo1 pull-left img-responsive" src="img/RotaractLou3.jpg" alt="Rotaract group" width="70%">
@@ -47,10 +49,11 @@
                         <p>Rotaract is a group made up of young professionals interested in leadership, professional development, community service, and having fun. Rotaract members identify needs in our community and work to fill them, by proposing, planning, and carrying out ideas for service projects both locally and internationally. From sorting food at food banks, to planting trees at local parks, and sorting textbooks to send to South Africa, Rotaractors regularly participate in a wide variety of service projects and make great friends along the way . </p>
                 </div>
             </div>
-            <div class="joinlink container-fluid">          <!--add keyboard accessiblity and ARIA-->
+<!-- pop up link to form -->
+            <div class="joinlink container-fluid">         
                 <a>Join Louisville Rotaract</a>
             </div>
-            <div class="joinform sr-only-focusable">          <!--connect to MailChimp API-->
+            <div class="joinform sr-only-focusable">          
                     <h5>Thank you for your interest in joining Rotaract!</h5> 
                         <p>Rotaract Club of Louisville is always looking for talented young professionals wishing to get involved in our organization and the community.</p>
 
@@ -79,6 +82,8 @@
 		              </p>
 	               </form>
                 </div>
+        
+<!-- link to google calendar -->
         <div class="row divLeft">
                 <div class="col-md-offset-.5 col-md-11.5">
                 <h4>Upcoming events</h4>
@@ -86,12 +91,13 @@
             </div>
         </div>
     </body>
-        <footer>
-            <div class="credits">
+    
+    <footer>
+        <div class="credits">
                 <p> &copy;   2016 SL9Design    ~    a CODELouisville Project</p>
-            </div>
-        </footer>
+        </div>
+     </footer>
     <script src="//code.jquery.com/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/joinlink.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/joinlink.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/navigation.js" type="text/javascript" charset="utf-8"></script>
 </html>

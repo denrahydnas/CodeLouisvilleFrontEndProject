@@ -18,9 +18,9 @@ $('.slider-nav').slick({
     touchMove:true,
 });
 
-$('.your-element').slick('slickNext');
+$('.icon-next').slick('slickNext');
     
-$('.your-element').slick('slickPrev');
+$('.icon-prev').slick('slickPrev');
     
 });
 

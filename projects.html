@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <meta charset = "utf=8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
@@ -17,7 +17,7 @@
              <nav role="expanding navigation">         <!--add keyboard accessiblity and ARIA-->
                 <img id="logo" src="img/rotaractLouLogo.svg" alt="Rotaract Louisville logo" width=200px>
                  <br><b class="caret"></b>
-                    <ul>
+                    <ul class="sr-only-focusable">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html" >About</a></li>
                         <li><a href="projects.html" class="selected">Projects</a></li>
@@ -29,23 +29,40 @@
                 <h2>Rotaract</h2><h1>Projects</h1> 
             </div>
         </header>
-    <body class="projects">
+    <body>
+    
+<!-- Welcome -->    
             <div class="row divLeft">
                 <div class="col-md-offset-1 col-md-11">
-                    <img class="photo img-responsive center-block" src="img/rotaractLou2.jpg" alt="Rotaract members working together" width="70%">
+                    <img class="photo img-responsive center-block" src="img/project3.jpg" alt="Rotaract members working together" width="70%">
                     <p>Rotaract members identify needs in our community and work to fill them, by proposing, planning, and carrying out ideas for service projects both here in the Ohio Valley and around the world. From planting trees to increase Louisville's tree canopy with Love Louisville Trees to helping local Girl Scout troops stock cookies, we regularly participate in a wide variety of service projects. </p>
                 </div>
             </div>
-            <div class="row divRight">
-                <div class="col-md-11"> <!--add facebook feed-->
-                <h5>projects: upcoming, current and past</h5> 
-                    <img class="photo img-responsive center-block" src="img/project1.jpg" alt="End polio infographic">
+        
+ <!-- project list -->       
+            <div class="row divRight" ng-controller="MainController">
+                    <div class="projects col-md-offset-.5 col-md-11">
+                        <h5>{{ promo }}</h5>
+                    </div>
+                        <div ng-repeat="project in projects" class="col-md-offset-2 col-md-8">
+                            <div class="project-header">
+                                <h5 class="name"> {{ project.name | uppercase}} </h5>
+                                <div class="rating pull-right">
+                                    <p class="likes" ng-click="plusOne($index)">+{{project.likes}}</p>
+                                </div>
+                            </div>
+                            <img class="photo img-responsive" ng-src="{{project.image}}">     
+                                <p class="date"> {{project.date | date}} </p>
+                                <p class="blurb"> {{project.blurb }} </p>   
+                        </div>
+                    <span></span>
                 </div>
-            </div>
+        
+<!-- pop up link to form -->       
             <div class="joinlink container-fluid">
                 <a>Join Louisville Rotaract</a>
             </div>
-            <div class="joinform">
+            <div class="joinform sr-only-focusable">
                     <h5>Thank you for your interest in joining Rotaract!</h5> 
                         <p>Rotaract Club of Louisville is always looking for talented young professionals wishing to get involved in our organization and the community.</p>
                         <p> Please fill out the form below. We will contact you soon with more information about joining our club.<br> (starred items are required)</p>
@@ -72,6 +89,8 @@
 		              </p>
 	               </form>
                 </div>
+        
+<!-- suggestion box -->
            <div class="row divLeft">
                 <div class="col-md-offset-1 col-md-11">
                     <h5>Have an idea for a Rotaract service project?</h5>
@@ -86,11 +105,11 @@
                         N<input id="N" type="radio" name="contactok" value="N"> 
 		              </p>
                         <!-- reveal if Y is checked -->
-                        <p class="reveal">
+                        <p class="reveal sr-only-focusable">
 			             <label for="contactname">What is your name?</label>
 			             <input id="contactname" name="name" type="text">
 		                  </p>
-		                  <p class="reveal">
+		                  <p class="reveal sr-only-focusable">
 			             <label for="contactemail">Please enter your email:</label>
 			             <input id="contactemail" name="email" type="email">
 		                  </p>
@@ -110,5 +129,8 @@
     <script src="js/navigation.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/joinlink.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/reveal.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angmodules.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angcontrollers.js" type="text/javascript" charset="utf-8"></script>
    
 </html>
