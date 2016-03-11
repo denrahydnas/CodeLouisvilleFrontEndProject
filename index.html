@@ -55,28 +55,23 @@
             </div>
             <div class="joinform sr-only-focusable">          
                     <h5>Thank you for your interest in joining Rotaract!</h5> 
-                        <p>Rotaract Club of Louisville is always looking for talented young professionals wishing to get involved in our organization and the community.</p>
+                        <p>Rotaract Club of Louisville is always looking for talented young professionals who wish to get involved in our organization and the community.</p>
 
                         <p> Please fill out the form below. We will contact you soon with more information about joining our club.<br>
-                            (starred items are required)</p>
+                            (all items are required for submission)</p>
                     <form id="join" action="#" method="post">
 		              <p>
-			             <label for="firstname">First Name:*</label>
-			             <input id="firstname" name="firstname" type="text">
+			             <label for="firstname">First Name:</label>
+			             <input id="firstname" name="firstname" type="text" ng-model="person.fname">
 		              </p>
                       <p>
-			             <label for="lastname">Last Name:*</label>
-			             <input id="lastname" name="lastname" type="text">
+			             <label for="lastname">Last Name:</label>
+			             <input id="lastname" name="lastname" type="text" ng-model="person.lname">
 		              </p>
 		              <p>
-			             <label for="email">Please enter your email:*</label>
-			             <input id="email" name="email" type="text">
+			             <label for="email">Please enter your email:</label>
+			             <input id="email" name="email" type="text" ng-model="person.email">
 		              </p>
-		              <p>
-			             <label for="phone">Please enter your phone number:</label>
-			             <input id="phone" name="phone" type="text">
-		              </p>
-                        <span class="reminder"></span>
 		              <p>
 			             <input id="submit" type="submit" value="Submit">
 		              </p>
@@ -98,6 +93,8 @@
         </div>
      </footer>
     <script src="//code.jquery.com/jquery-1.12.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angularmods.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/joinlink.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/navigation.js" type="text/javascript" charset="utf-8"></script>
 </html>

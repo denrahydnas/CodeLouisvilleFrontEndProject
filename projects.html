@@ -45,17 +45,12 @@
                         <h5>{{ promo }}</h5>
                     </div>
                         <div ng-repeat="project in projects" class="col-md-offset-2 col-md-8">
-                            <div class="project-header">
                                 <h5 class="name"> {{ project.name | uppercase}} </h5>
-                                <div class="rating pull-right">
-                                    <p class="likes" ng-click="plusOne($index)">+{{project.likes}}</p>
-                                </div>
-                            </div>
                             <img class="photo img-responsive" ng-src="{{project.image}}">     
                                 <p class="date"> {{project.date | date}} </p>
+                                <p class="likes pull-right" ng-click="plusOne($index)">+{{project.likes}}</p>                  
                                 <p class="blurb"> {{project.blurb }} </p>   
                         </div>
-                    <span></span>
                 </div>
         
 <!-- pop up link to form -->       
@@ -130,7 +125,6 @@
 	<script src="js/joinlink.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/reveal.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/angmodules.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/angcontrollers.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angularmods.js" type="text/javascript" charset="utf-8"></script>
    
 </html>

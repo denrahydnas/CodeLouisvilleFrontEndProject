@@ -78,13 +78,20 @@ p {
     font-size: 3.5vw;
 }
 
-
+.panel h6 {
+    font-size:6vw;
+}
+    
+.panel .descr li {
+    font-size:5vw;
+}
+    
 /* HEADER */
 
 nav {
     display:none,
-    /* use Jquery to create dropdown*/
 }
+    
 nav #logo {
         width: 100px;
 }
@@ -93,31 +100,28 @@ nav #logo {
 /* CONTENT */
 
 .divLeft {
-    margin: 15% 5% 5% 0%;
-    padding: 2%; 
+    padding: 3%; 
 }
 
 .divRight {
-    margin: 15% 0% 5% 5%;
-    padding: 2%;
+    padding: 3%;
 }
 
 .icons a {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
     
 .joinlink a {
     font-size: 10vw;  
 }
-   
-.link object {
-    width:10%;
-    height:10%;
-    }
     
 .icons {
     padding-bottom: 50px;
     } 
+    
+.icon {
+        display:block;
+    }
 
 
 

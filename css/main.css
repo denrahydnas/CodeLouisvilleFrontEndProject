@@ -100,6 +100,10 @@ a:hover {
     color: #FC3;
 }
 
+.panel .descr li {
+    font-size:1.8em;
+}
+
 /* NAVIGATION */
 nav {
     text-decoration: none;
@@ -141,7 +145,7 @@ nav ul {
     box-shadow: 5px 5px 10px #006;
     border-width: 3px 12px 10px 0px;
     margin: 3% 20% 3% 0%;
-    padding: 2%; 
+    padding: 5% 2%; 
 }
 
 .divRight {
@@ -150,7 +154,7 @@ nav ul {
     box-shadow: -5px 5px 30px #006;
     border-width: 3px 0px 10px 12px;
     margin: 1% 0% 3% 10%;
-    padding: 3% 20% 3% 2%
+    padding: 5% 20% 5% 2%
 }
 
 .joinlink {
@@ -160,6 +164,7 @@ nav ul {
     text-align: center;
     display:block;
     padding: 3% 0 3% 0;
+    margin: 40px 0 40px 0;
 }
 .joinlink a {
     color:#FC3;
@@ -174,12 +179,21 @@ nav ul {
     border-radius:10px;
 }
 
+.fb-page {
+    border: 4px solid #FFCC33; 
+    max-width: 475px;
+}
+
+.fb {
+    padding:5%;
+}
+
 /* PHOTOS */
 
 .photo {
     border-radius:2em;
     border: 4px solid #FFCC33; 
-    margin: 0 2% 1% 0;
+    margin: 0% 2% 2% 0%;
 }
 
 .photo1 {
@@ -187,17 +201,22 @@ nav ul {
 }
 
 
-.slider-for img {
+.gallery {
+    max-width: 100%;
+    height:250px;
+    display:inline-block;
     border-radius:2em;
-    border: 4px solid #FC3;
+    border: 4px solid #FFCC33; 
+    margin: 2% 2% 2% 0%;
 }
+
+
 /* INTERACTIVE JOIN FORM */
 
 .joinform {
-    display:none;
+    display:block;
     background-color:#FC3;
     border: 8px solid #006;
-    margin:0 5% 0 5%;
     text-align:center;
     border-radius:2em;
 }
@@ -272,10 +291,7 @@ nav ul {
     list-style:circle;
 }
 
-.fwdarrow, bckarrow {
-    background-color:#FC3;
-    border-radius:50%;
-}
+
 
 /* CONTACTS PAGE */
 
@@ -283,6 +299,11 @@ nav ul {
     margin-bottom:3%;
     display: flex;
     align-items: center;
+}
+
+object {
+  width: 100%;
+    min-width:30px;
 }
 
 /* PROJECTS PAGE */
@@ -305,7 +326,7 @@ nav ul {
    min-width: 40px;
    height: 40px;
    border-radius: 50%;
- margin: 0 -30px 0 40px;
+    margin: 0 0 0 30px;
    text-align: center;
    font-weight: 200;
    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -318,10 +339,18 @@ nav ul {
    transition: background 500ms;
 }
 
-.name {
+.date {
     display:inline-block;
-    margin-top:30px;
 }
 
+.name {
+    margin: 5% 0 5% 0;
+    font-weight:700;
+}
+
+.projects h5 {
+    font-size: 3em;
+    margin-bottom:2%;
+}
 
 

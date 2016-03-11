@@ -1,0 +1,86 @@
+<script>
+      var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+      if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+        document.getElementById('ajax').innerHTML = xhr.responseText;
+      } else  {
+          alert(xhr.statusText);
+      }
+      }
+    };
+    xhr.open('GET', 'sidebar.html');
+    function sendAJAX(){
+    xhr.send();
+ document.getElementById('load').style.display = "none";
+    };
+  </script>
+</head>
+<body>
+  <div class="grid-container centered">
+    <div class="grid-100">
+      <div class="contained">
+        <div class="grid-100">
+          <div class="heading">
+            <h1>Bring on the AJAX</h1>
+            <button id="load" onclick="sendAJAX()">Bring it</button>
+          </div>
+          <div id="ajax">
+
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+            
+            
+ <!-- Sidebar -->           
+<section>
+<h2>Welcome to the wonderful world of AJAX</h2>
+<p>This content provided to you dynamically by the XMLHTTP Request Object</p>
+</section>
+
+
+
+function ConvertFormToJSON(form){
+    var array = jQuery(form).serializeArray();
+    var json = {};
+    
+    jQuery.each(array, function() {
+        json[this.name] = this.value || '';
+    });
+    
+    return json;
+}
+jQuery(document).on('ready', function() {
+    jQuery('form#add-new-task').bind('submit', function(event){
+        event.preventDefault();
+
+        var form = this;
+        var json = ConvertFormToJSON(form);
+
+        $.ajax({
+            type: "POST",
+            url: "submit.php",
+            data: json,
+            dataType: "json"
+        });
+		
+        var tbody = jQuery('#to-do-list > tbody');
+        
+        tbody.append('<tr><th scope="row" style="background-color:' + this['new-task-color'].value + 
+            '"><input type="checkbox" /></th><td>' + this['new-task-date'].value +
+            '</td><td>' + this['new-task-priority'].value + '</td><td>' + this['new-task-name'].value + 
+            '</td><td>' + this['new-task-desc'].value + '</td><td>' + this['new-task-email'].value + '</td></tr>');                
+        
+        return true;
+    });
+});
+
+$("button").click(function(){
+    var x = $("form").serializeArray();
+    $.each(x, function(i, field){
+        $("#results").append(field.name + ":" + field.value + " ");
+    });
+});
