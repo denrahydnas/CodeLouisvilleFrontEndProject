@@ -35,7 +35,7 @@
         <div class="row divLeft">
                 <div class="col-md-offset-1 col-md-11">
                     <img class="photo photo1 pull-left img-responsive" src="img/rotaractLou1.jpg" alt="Rotaract family" width="60%">
-                    <p>The Rotaract Club of Louisville provides a fellowship of inspired business, professional and civic leaders with exceptional opportunities for humanitarian and civic service, while promoting integrity, understanding and goodwill on a local, national and worldwide basis. Monthly meetings feature business and civic leaders as speakers, and the club hosts regular leadership and professional development workshops. 
+                    <p>The Rotaract Club of Louisville provides a fellowship of inspired business, professional and civic leaders with exceptional opportunities for humanitarian and civic service, while promoting integrity, understanding and goodwill on a local, national and worldwide basis. <br> Monthly meetings feature business and civic leaders as speakers, and the club hosts regular leadership and professional development workshops. 
                     </p>
                 </div>
             </div>
@@ -148,35 +148,30 @@
 </div>
 
 <!-- popup link to form --> 
-         <div class="joinlink container-fluid">          
+          <div class="joinlink container-fluid">         
                 <a>Join Louisville Rotaract</a>
             </div>
-            <div class="joinform sr-only-focusable">         
+            <div class="joinform sr-only-focusable">          
                     <h5>Thank you for your interest in joining Rotaract!</h5> 
-                        <p>Rotaract Club of Louisville is always looking for talented young professionals wishing to get involved in our organization and the community.</p>
+                        <p>Rotaract Club of Louisville is always looking for talented young professionals who wish to get involved in our organization and the community.</p>
 
                         <p> Please fill out the form below. We will contact you soon with more information about joining our club.<br>
-                            (starred items are required)</p>
+                            (all items are required for submission)</p>
                     <form id="join" action="#" method="post">
 		              <p>
-			             <label for="firstname">First Name:*</label>
-			             <input id="firstname" name="firstname" type="text">
+			             <label for="firstname">First Name:</label>
+			             <input id="firstName" name="firstname" type="text" value=" "/>
 		              </p>
                       <p>
-			             <label for="lastname">Last Name:*</label>
-			             <input id="lastname" name="lastname" type="text">
+			             <label for="lastname">Last Name:</label>
+			             <input id="lastName" name="lastname" type="text" value=" "/>
 		              </p>
 		              <p>
-			             <label for="email">Please enter your email:*</label>
-			             <input id="email" name="email" type="text">
+			             <label for="email">Please enter your email:</label>
+			             <input id="email" name="email" type="text" value=" "/>
 		              </p>
 		              <p>
-			             <label for="phone">Please enter your phone number:</label>
-			             <input id="phone" name="phone" type="text">
-		              </p>
-                        <span class="reminder"></span>
-		              <p>
-			             <input id="submit" type="submit" value="Submit">
+                        <input id="submit" type="button" name="button" Value="submit" onClick="formResults(this.form)"/>
 		              </p>
 	               </form>
                 </div>

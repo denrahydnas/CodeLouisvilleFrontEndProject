@@ -54,33 +54,30 @@
                 </div>
         
 <!-- pop up link to form -->       
-            <div class="joinlink container-fluid">
+            <div class="joinlink container-fluid">         
                 <a>Join Louisville Rotaract</a>
             </div>
-            <div class="joinform sr-only-focusable">
+            <div class="joinform sr-only-focusable">          
                     <h5>Thank you for your interest in joining Rotaract!</h5> 
-                        <p>Rotaract Club of Louisville is always looking for talented young professionals wishing to get involved in our organization and the community.</p>
-                        <p> Please fill out the form below. We will contact you soon with more information about joining our club.<br> (starred items are required)</p>
+                        <p>Rotaract Club of Louisville is always looking for talented young professionals who wish to get involved in our organization and the community.</p>
+
+                        <p> Please fill out the form below. We will contact you soon with more information about joining our club.<br>
+                            (all items are required for submission)</p>
                     <form id="join" action="#" method="post">
 		              <p>
-			             <label for="firstname">First Name:*</label>
-			             <input id="firstname" name="firstname" type="text">
+			             <label for="firstname">First Name:</label>
+			             <input id="firstName" name="firstname" type="text" value=" "/>
 		              </p>
                       <p>
-			             <label for="lastname">Last Name:*</label>
-			             <input id="lastname" name="lastname" type="text">
+			             <label for="lastname">Last Name:</label>
+			             <input id="lastName" name="lastname" type="text" value=" "/>
 		              </p>
 		              <p>
-			             <label for="email">Please enter your email:*</label>
-			             <input id="email" name="email" type="text">
+			             <label for="email">Please enter your email:</label>
+			             <input id="email" name="email" type="text" value=" "/>
 		              </p>
 		              <p>
-			             <label for="phone">Please enter your phone number:</label>
-			             <input id="phone" name="phone" type="text">
-		              </p>
-                        <span class="reminder"></span>
-		              <p>
-			             <input id="submit" type="submit" value="Submit">
+                        <input id="submit" type="button" name="button" Value="submit" onClick="formResults(this.form)"/>
 		              </p>
 	               </form>
                 </div>

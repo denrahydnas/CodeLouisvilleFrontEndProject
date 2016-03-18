@@ -5,7 +5,9 @@ body {
     margin:0;
     padding:0;
 }
-
+.title1 {
+    background-image: url(backgroundimages/bridges.png);
+}
 .title2 {
     background-image: url(backgroundimages/churchill.png);
 }
@@ -16,7 +18,7 @@ body {
     background-image: url(backgroundimages/21C.png);
 }
 .title5 {
-    background-image: url(backgroundimages/bridges.png);
+    background-image: url(backgroundimages/fountain.png);
 }
 
 .jumbotron {
@@ -220,18 +222,19 @@ nav ul {
     text-align:center;
     border-radius:2em;
 }
-.joinform #submit {
+.joinform .submit {
     background-color:#006;
     padding:1%;
     border-radius:50%;
     border-color:#006;
     color:#FC3;
     box-shadow: 2px 2px 10px #000;
+    margin:2%;
 }
-.joinform #submit:hover {
+.joinform .submit:hover {
     box-shadow: 2px 2px 10px #FFF;
 }
-.joinform #submit:focus {
+.joinform .submit:focus {
     box-shadow: 2px 2px 10px #FFF;
 }
 #overlay {
@@ -302,7 +305,7 @@ nav ul {
 }
 
 object {
-  width: 100%;
+    width: 100%;
     min-width:30px;
 }
 
@@ -317,30 +320,30 @@ object {
 }
 
 .likes{
-   background: #FC3 ;
-     color: #006;
-     cursor: pointer;
-     display: inline-block;
-     font-size: 15px;
-   line-height: 40px;
-   min-width: 40px;
-   height: 40px;
-   border-radius: 50%;
+    background: #FC3 ;
+    color: #006;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
     margin: 0 0 0 30px;
-   text-align: center;
-   font-weight: 200;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-   transition: background 500ms;
+    text-align: center;
+    font-weight: 200;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background 500ms;
 }
 
 .likes:hover{
- color: #FFF ;
-   background: rgba(0, 0, 102, 0.25);
-   transition: background 500ms;
+    color: #FFF ;
+    background: rgba(0, 0, 102, 0.25);
+    transition: background 500ms;
 }
 
 .date {
-    display:inline-block;
+   display:inline-block;
 }
 
 .name {
