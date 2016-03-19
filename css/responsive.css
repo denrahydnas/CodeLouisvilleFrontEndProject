@@ -23,8 +23,14 @@ h5 {
 }
 
 h6 {
-    font-size: 4vw;
+    font-size: 3vw;
 }
+    
+.photobtn {
+    font-size: 14px;
+    margin:1px;
+}
+
 /* HEADER */
 
 nav {
@@ -85,6 +91,19 @@ p {
 .panel .descr li {
     font-size:5vw;
 }
+           
+.frame {
+    padding: 2%; 
+    max-width:90;
+    margin:auto;
+}
+    
+#photos .image {
+    max-height: 200px;
+}
+.albums {
+    margin:0 10% 2% 10%;
+    }
     
 /* HEADER */
 
@@ -100,11 +119,13 @@ nav #logo {
 /* CONTENT */
 
 .divLeft {
-    padding: 3%; 
+    margin: 10% 2% 5% 0%;
+    padding: 3%;
 }
 
 .divRight {
-    padding: 3%;
+    margin: 10% 0% 5% 2%%;
+    padding:3%;
 }
 
 .icons a {
