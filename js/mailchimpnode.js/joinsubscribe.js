@@ -40,21 +40,3 @@ $("#submit").submit(function(e){
     
 });    
 
-
-    
-   // function mailChimpPost(data){   
-   //     $.ajax({
-   //         url: url,
-     //       user: apiKey,
-       //     method: 'POST',
-         //   data: subscriber,
-         //   dataType: 'jsonp',
-         //   contentType: 'application/json; charset=utf-8',
-        //    error: function(res, text){
-          //      console.log('Error', res);
-        //    },
-        //    success: function(res){
-        //        console.log('Success', res);
-        //    }
-      //  });
-  //  });
