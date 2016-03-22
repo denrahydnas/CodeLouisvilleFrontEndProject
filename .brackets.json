@@ -1,7 +1,5 @@
 {
     "jscodehints.detectedExclusions": [
-        "C:/Users/Sandy/Documents/GitHub/CodeLouisvilleProject/js/reveal.js",
-        "C:/Users/Sandy/Documents/GitHub/CodeLouisvilleProject/js/joinlink.js",
-        "C:/Users/Sandy/Documents/GitHub/CodeLouisvilleProject/js/navigation.js"
+        "C:/Users/Sandy/Documents/GitHub/CodeLouisvilleProject/js/reveal.js"
     ]
 }

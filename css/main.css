@@ -23,7 +23,6 @@ body {
 
 .jumbotron {
     background-size: cover;
-    /*max-height:632px;*/
     padding-top:20%;
     border-bottom: 30px solid #006;
     background-repeat:no-repeat;

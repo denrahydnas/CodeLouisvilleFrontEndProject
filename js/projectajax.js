@@ -5,9 +5,9 @@ $(document).ready(function(){
     function postSuggestions(){
         var info = {
                 formkey:"1wjb4ZXftkcEkZk1LaY39kIPOgtVleJ7QBwJSADQ65hQ",
-                idea: $("#projectidea").val(),
-                email: $("#contactemail").val(),
-                name: $("#contactname").val(),
+                "entry.1644031193": $("#projectidea").val(),
+                "entry.1658064550": $("#contactemail").val(),
+                "entry.7375670": $("#contactname").val(),
                 };               
         var infoObject = JSON.stringify(info);
         console.log(infoObject);
@@ -19,7 +19,7 @@ $(document).ready(function(){
         dataType: "JSON",
         statusCode: {
             0: function() {
-                console.log("try again!")
+                console.log("nice job")
             },
             200: function() {
                 console.log("success!") //Success Message
@@ -27,10 +27,10 @@ $(document).ready(function(){
         }
     });
 
-    $('#ideasubmit').click(function (event){
-        event.preventDefault();
-        postSuggestions();
-        return false;
-    });
+        $('#ideasubmit').click(function(event){
+            event.preventDefault();
+            postSuggestions();
+            return false;
+        });
     };
 });
